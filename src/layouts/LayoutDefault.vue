@@ -23,19 +23,23 @@
         <div class="footer__sale">
           <div class="sale__form">
             <p class="Join">Join our KicksPlus Club & get 15% off</p>
-          <p>Sign up for free! Join the community.</p>
-          <div class="join-form">
-            <input type="text">
-            <button class="submit-btn">SUBMIT</button>
-          </div>
-
-
+            <p>Sign up for free! Join the community.</p>
+            <div class="join-form">
+              <label for="">
+                <input type="text">
+                <button class="submit-btn">SUBMIT</button>
+              </label>
+            </div>
           </div>
           <div class="sale__lable">
-              <img src="../assets/images/LogoSM.svg" alt="KICKS">
-            </div>
+            <img src="../assets/images/LogoSM.svg" alt="KICKS">
+          </div>
         </div>
-        <div class="footer__inner"></div>
+        <div class="footer__inner">
+          <div class="footer-logo"><img src="../assets/images/footer-logo.png" alt=""></div>
+        </div>
+      </div>
+      <div class="rights-bar"><span>© All rights reserved | Made with ❤️ by Junior developer Mikhail Stepnov</span>
       </div>
     </footer>
   </div>
@@ -52,6 +56,7 @@ export default {
 .header {
   position: sticky;
   top: 20px;
+
   .nav {
     background-color: #ffffff;
     border-radius: 24px;
@@ -109,59 +114,99 @@ footer {
       background-color: #4A69E2;
       border-radius: 48px 48px 0 0;
 
-      .sale__form{
+      .sale__form {
 
         width: 510px;
-        .Join{
+
+        .Join {
           font-size: 48px;
           color: #ffffff;
           font-weight: 500;
         }
-        p{
+
+        p {
           font-size: 20px;
-color: #ffffff;
+          color: #ffffff;
         }
-        .join-form{
-          input{
+
+        .join-form {
+
+
+          input {
+
             width: 342px;
             height: 48px;
-            border: none;
+            border: 2px solid #ffffff;
+            color: #fff;
             border-radius: 8px;
-
+            font-size: 20px;
+            background-color: #4A69E2;
+            outline: none;
           }
-          .submit-btn{
+
+          .submit-btn {
             color: #ffffff;
             background-color: #232321;
             width: 102px;
             height: 48px;
             border-radius: 8px;
             text-align: center;
-            border: 2px solid #4A69E2;
+
             font-weight: 500;
-            &:hover{
+
+            margin-left: 4px;
+
+            &:hover {
               background-color: #ffffff;
               color: #232321;
-              border: 2px solid #232321;
-
+              outline: 2px solid #232321;
 
             }
           }
 
         }
-        .sale_lable{
-          img{
 
-          }
+        .sale_lable {
+          img {}
         }
       }
     }
+  }
 
-    .footer__inner {
-      max-width: 1320px;
-      height: 591px;
-      background-color: #232321;
-      border-radius: 48px;
+  .footer__inner {
+    max-width: 1320px;
+    height: 591px;
+    background-color: #232321;
+    border-radius: 48px;
+
+    position: relative;
+    z-index: 66;
+
+    .footer-logo {
+      display: flex;
+      justify-content: center;
+
+      z-index: 66;
+
+
+
+      img {
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+
+        max-width: 100%;
+      }
     }
+  }
+}
+
+.rights-bar {
+  display: flex;
+  justify-content: center;
+
+  span {
+    font-size: 24px;
   }
 }
 </style>
