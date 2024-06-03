@@ -95,7 +95,7 @@ footer {
   margin-top: 128px;
 
   .footer__contaier {
-    width: 1320px;
+    max-width: 1320px;
 
     background-color: #4A69E2;
     border-radius: 48px;
@@ -104,7 +104,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      width: 1320px;
+      max-width: 1320px;
       height: 340px;
       background-color: #4A69E2;
       border-radius: 48px 48px 0 0;
@@ -157,7 +157,7 @@ color: #ffffff;
     }
 
     .footer__inner {
-      width: 1320px;
+      max-width: 1320px;
       height: 591px;
       background-color: #232321;
       border-radius: 48px;
