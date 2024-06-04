@@ -16,7 +16,7 @@ a,
     transition: 0.4s;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 600px) {
     body {}
-    #app {}
+    #app {padding: 0rem;}
 }
