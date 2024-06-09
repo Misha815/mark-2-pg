@@ -4,8 +4,8 @@
     <h1>DO IT <span>RIGHT</span></h1>
     <div class="container-header__content">
       <div class="shop-now">
-        <span class="title-span">NIKE AIR MAX</span>
-        <span>Nike introducing the new air max for everyone's comfort</span>
+        <h2 class="title-span">NIKE AIR MAX</h2>
+        <p>Nike introducing the new air max for everyone's comfort</p>
         <button>SHOP NOW</button>
       </div>
     </div>
@@ -54,12 +54,13 @@ export default {
       justify-content: end;
 
       .title-span {
-        font-size: 74px;
+        color: #FFF;
+        font-size: clamp(1.5rem, -0.1622rem + 5.3191vw, 4.625rem);
       }
 
-      span {
+      p {
         color: #FFF;
-        font-size: 24px;
+        font-size: clamp(0.875rem, 0.5426rem + 1.0638vw, 1.5rem);
       }
 
       button {
