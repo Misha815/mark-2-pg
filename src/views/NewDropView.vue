@@ -1,18 +1,19 @@
 <template>
   <layout-default>
     <div class="NewDrop-container">
-    <h1>This is an New drop page</h1>
-  </div>
+      <listing-page />
+    </div>
   </layout-default>
 
 </template>
 
 <script>
+import ListingPage from '@/components/ListingPage.vue'
 import LayoutDefault from '../layouts/LayoutDefault.vue'
-  export default {
-  components: { LayoutDefault },
+export default {
+  components: { LayoutDefault, ListingPage },
 
-  }
+}
 </script>
 
 <style lang="scss" scoped>
